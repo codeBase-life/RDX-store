@@ -126,5 +126,10 @@ body, .container-fluid{
 .blogs-img{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     
+}
+
+.blogs{
+    margin-bottom: 50px;
 }
