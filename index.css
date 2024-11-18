@@ -1,135 +1,27 @@
-*{
-    overflow-x: hidden;
-}
-body{
-   
-    padding: 0px;
-    margin: 0px;
-}
-/* main container */
-body, .container-fluid{
-    padding: 0;
-    margin: 0;
+.slider{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
 }
 
-.logo{
-    width: 100px;
-    height: 80px;
-    float: left;
-    object-fit: contain;
-    
-}
-.menu{
+.slider .slide-track{
+    animation: scroll 40s linear infinite;
     display: flex;
-    list-style-type: none;
-    justify-content:space-evenly;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-}
-.menu li{
-    font-weight: 700;
-}
-.common{
-    width: 30px;
-    /* height: 80px; */
-    object-fit: contain;
-}
-.cart-bar{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-}
-.hero{
-    object-fit: contain;
-    width: 100%;
+    width: calc(250px * 5);
 }
 
-.testimonial{
-    margin:50px 0 50px 0
-    /* background-color: black; */
-}
-.gap{
-    row-gap: 5px;
-}
-.products{
-    display: flex;
-    justify-content: space-evenly;
-}
-.num-products{
-    display: flex;
-    width: 25%;
-    object-fit: contain;
-    flex-direction: column;
-    
-}
-.num-products span{
-    font-size: 20px;
-    font-weight: 700;
-}
-.line{
-    margin: 50px 0 50px 0;
-}
-.four-boxes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+.slider .slide{
+    height: 100px;
+    width: 250px;
 }
 
-@media (max-width: 600px) {
-    .four-boxes {
-        grid-template-columns: 1fr;
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
     }
-}
-
-.second{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 50px 0 50px 0;
-
-}
-.second-area{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-
-}
-.second-area img{
-    width: 100%;
-    object-fit: contain;
-}
-.second-area-box{
-    margin: 50px 0 0 0;
-}
-.second-area-box h2{
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.second-area span{
-    font-size: 20px;
-    font-weight: 700;
-}
-.second-line{
-    margin-bottom: 50px;
-}
-.podcast{
-    padding: 0;
-    margin: 0 0 50px 0 ;
-}
-.blogs-title{
-    margin-bottom: 50px;
-}
-.blogs-img{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    
-}
-
-.blogs{
-    margin-bottom: 50px;
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
 }
