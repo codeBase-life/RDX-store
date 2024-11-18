@@ -84,12 +84,13 @@
 
     <main>
         <section>
-            <div class="container-fluid">
-
-                <img src="./assets/Sauna_Suit_Banner_KV-Final_1920x600_crop_center.webp" width="100%" alt="">
-
+            <div class="container-fluid d-none d-sm-block">
+                <img class="img-fluid" src="./assets/Sauna_Suit_Banner_KV-Final_1920x600_crop_center.webp" alt="">
             </div>
-
+            <div class="container-fluid d-block d-sm-none">
+                <img class="img-fluid object-fit-none border"
+                    src="./assets/Sauna_Suit_Banner_KV-Final_1920x600_crop_center.webp" height="200">
+            </div>
 
         </section>
 
@@ -141,6 +142,11 @@
                 </div>
 
             </div>
+
+        </section>
+
+        <!-- trending products -->
+        <section>
 
         </section>
     </main>
